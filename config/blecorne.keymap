@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_UNDR";
             #binding-cells = <0>;
-            bindings = <&kp APOS>, <&kp MINUS>;
+            bindings = <&kp APOS>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -33,24 +33,27 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_QT";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp SQT>;
+            bindings = <&kp MINUS>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <0>;
         };
 
         slsh_lt: slsh_lt {
             compatible = "zmk,behavior-mod-morph";
             label = "SLSH_LT";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp COMMA>;
+            bindings = <&kp SLASH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <0>;
         };
 
         com_qn: com_qn {
             compatible = "zmk,behavior-mod-morph";
             label = "COM_QN";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp FSLH>;
+            bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <0>;
         };
     };
 
