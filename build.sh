@@ -4,7 +4,7 @@ set -eu
 APP_DIR=/workspaces/zmk/app
 LEFT_DIR=build-left
 RIGHT_DIR=build-right
-mkdir build/
+mkdir -p build/
 pushd $APP_DIR
 west build -b blecorne_left -d $LEFT_DIR -- -DZMK_CONFIG=/workspaces/zmk-config/config -DZMK_EXTRA_MODULES=/workspaces/zmk-config/
 west build -b blecorne_right -d $RIGHT_DIR -- -DZMK_CONFIG=/workspaces/zmk-config/config -DZMK_EXTRA_MODULES=/workspaces/zmk-config/
