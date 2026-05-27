@@ -27,6 +27,7 @@
             #binding-cells = <0>;
             bindings = <&kp APOS>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dash_qt: dash_qt {
@@ -35,16 +36,16 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <0>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        // why does this one work?
         slsh_lt: slsh_lt {
             compatible = "zmk,behavior-mod-morph";
             label = "SLSH_LT";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <0>;
         };
 
         com_qn: com_qn {
@@ -53,7 +54,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <0>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
