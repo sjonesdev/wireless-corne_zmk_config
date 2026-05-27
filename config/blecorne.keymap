@@ -25,18 +25,16 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_UNDR";
             #binding-cells = <0>;
-            bindings = <&kp SINGLE_QUOTE>, <&kp MINUS>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         dash_qt: dash_qt {
             compatible = "zmk,behavior-mod-morph";
             label = "DASH_QT";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp MINUS>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         // why does this one work?
@@ -44,18 +42,16 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SLSH_LT";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp COMMA>;
+            bindings = <&kp SLASH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         com_qn: com_qn {
             compatible = "zmk,behavior-mod-morph";
             label = "COM_QN";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SLASH>;
+            bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
