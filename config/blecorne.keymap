@@ -89,7 +89,7 @@
         media_layer {
             bindings = <
                 &bootloader &sys_reset   &none        &none        &none        &none           &none &none        &none        &none        &sys_reset   &bootloader
-                &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &kp C_VOL_UP &kp C_VOL_DN &kp C_BRI_UP &kp C_BRI_DN &none
+                &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DB &kp C_BRI_UP &none
                 &to 0       &none        &none        &none        &none        &none           &none &none        &none        &none        &none        &to 0
                                                       &none        &none        &none           &none &none        &none
             >;
